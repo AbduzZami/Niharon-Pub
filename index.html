@@ -25,6 +25,29 @@
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"
       nonce="gCKfeeHm"
     ></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDzbokYBXjwYXk4PBLDlgPeJUkbfNRQC2w",
+        authDomain: "niharon-pub.firebaseapp.com",
+        projectId: "niharon-pub",
+        storageBucket: "niharon-pub.appspot.com",
+        messagingSenderId: "157604027912",
+        appId: "1:157604027912:web:0bbc9139c1a79f9f453bbd",
+        measurementId: "G-W32EVLK4XR"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     <!-- fb comment plugin end -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
