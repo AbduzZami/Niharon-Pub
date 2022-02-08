@@ -40,11 +40,8 @@ downloadbutton.addEventListener('click', () =>{
         })
         var current = parseInt(showDownload.innerHTML);
         var final = current + 1;
-        console.log(current)
-        console.log(final)
-        if(final-current == 1){
-          showDownload.innerHTML = final;
-        }
+
+        showDownload.innerHTML = final;
 })
 
 const colRef = collection(db, 'Books') 
