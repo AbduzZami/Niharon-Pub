@@ -1,89 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>নিহারন প্রকাশনী</title>
+    <link rel="shortcut icon" href="pub.png">
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.14.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+    <!-- fb comment plugin start -->
+    <div id="fb-root"></div>
+    
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"
+      nonce="gCKfeeHm"
+    ></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDzbokYBXjwYXk4PBLDlgPeJUkbfNRQC2w",
+        authDomain: "niharon-pub.firebaseapp.com",
+        projectId: "niharon-pub",
+        storageBucket: "niharon-pub.appspot.com",
+        messagingSenderId: "157604027912",
+        appId: "1:157604027912:web:0bbc9139c1a79f9f453bbd",
+        measurementId: "G-W32EVLK4XR"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
     </script>
+    <!-- fb comment plugin end -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="pub.png"
+          width="22"
+          height="30"
+          class="d-inline-block align-top book"
+          alt=""
+        />
+        নিহারন প্রকাশনী
+      </a>
+    </nav>
+
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-sm-6 text-align-center">
+          <img
+            class="cover"
+            height="500px"
+            width="auto"
+            src="cover.png"
+            alt=""
+          />
+        </div>
+        <div class="col-sm-6">
+          <h1 class="font-weight-bold bangla title">
+            মাতৃভাষায় জাভা শিখি
+          </h1>
+
+          <h5 class="bangla">-আব্দুজ জামি</h5>
+          <br />
+          <h3 class="text-success bangla price">
+            মূল্য (পিডিএফ ভার্সন) : ৫০ টাকা মাত্র
+          </h3>
+          <br />
+
+          <p style="font-size: 20px" class="bangla main-part">
+            এই বইটি জাভার সাথে অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং শেখার জন্য অনেক সহজ ভাষায় লেখা একটি বই।
+            আশা করি এই বইটি পরলে কারো ওওপি এবং জাভার বেসিকে কোন ত্রুটি থাকবেনা।
+             বইটির পিডিএফ ভার্সনটির শুভেচ্ছা মূল্য মাত্র ৫০ টাকা। তবে যাদের পক্ষে
+            মূল্য পরিশোধ সম্ভব নয় তারা নির্দ্বিধায় বিনামূল্যে বইটি পরতে পারে।
+            একবার মূল্য পরিশোধ করলে পরবর্তী ডাউনলোডের জন্য নতুন করে মূল্য
+            পরিশোধের দরকার নেই। ডাউনলোড করতে সমস্যা হলে <br />
+            ইমেইল করুন :
+            <a href="mailto: abduz.zami@gmail.com" target="_blank">abduz.zami@gmail.com</a>
+            <br />
+            <br />বিকাশ, রকেট, নগদ এর মাধ্যমে মূল্য পরিশোধ করতে পারেন।<br />
+            বিকাশ - 01521704287 <br />রকেট - 01706335199<br />
+            নগদ - 01521704287<br />
+          </p>
+
+          <button type="button" class="btn btn-primary" id="downloadbutton">
+            <a
+              style="text-decoration: none !important; color: white"
+              href="মাতৃভাষায় জাভা শিখি - আব্দুজ জামি.pdf"
+              download="মাতৃভাষায় জাভা শিখি - আব্দুজ জামি"
+              >Download the Book</a
+            >
+          </button><br><br>
+          <h6 class="fw-bold">Total Downloads - 
+            <span class="badge rounded-pill bg-success text-light show-download opacity-25">loading..</span>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="container">
+      <div
+        class="fb-comments"
+        data-href="https://niharon-pub.netlify.app/"
+        data-width=""
+        data-numposts="5"
+      ></div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <div class="container">
+      <div class="footer bangla pt-3" id="footer-id">
+        <p>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/abduzzami"
+            style="text-decoration: none"
+            >© আব্দুজ জামি</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
   </body>
 </html>
